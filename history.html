@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Are you really reading this, nerd -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Plague</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icon.ico" />
+</head>
+<body>
+    <audio autoplay>
+        <source src="img/introMusic.mp3">
+    </audio>
+    <!-- Header Bar -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/plagueDoctor.gif"></a>
+            <h1>The Plague: An Overview</h1>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <!-- Images link to popular parts of page -->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+            <li data-target="#slides" data-slide-to="3"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/carousel1.png">
+                <div class="carousel-caption">
+                    <h2 class="display-3">The Plague</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carousel2.png">
+                <div class="carousel-caption">
+                    <h2 class="display-3">History</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carousel3.png">
+                <div class="carousel-caption">
+                    <h2 class="display-3">Origins</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carousel4.gif">
+                <div class="carousel-caption">
+                    <h2 class="display-3">The Future</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--- Fixed background -->
+    <figure>
+        <div class="fixed-wrap">
+            <div id="fixed">
+            </div>
+        </div>
+    </figure>
+
+    <!-- Two Column Section -->
+    <!-- Links on left / Page on right -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-xs-2 linkColumn">
+                <h2>Navigation</h2>
+                <ul class="nav flex-sm-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#post">Welcome</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./history.html#post">A History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./origins.html#post">Origins</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./infection.html#post">Infection/Death</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="doItAlert()" href="./future.html#post">The Future</a>
+                    </li>
+                    <script>
+                        function doItAlert() {
+                            alert("Get ready...");
+                        }
+                    </script>
+                </ul>
+            </div>
+            <div class="col-xs-10 pageColumn" id="post">
+                <h2>A History</h2>
+                <hr>
+                <h3>Our Constant Companion</h3>
+                <blockquote>
+                    There have been three known pandemics of plague. Fortunately each one has been less deadly than the last, due to the advances in medical knowledge. Still, the death toll each time has been massive, enough to genetically bottleneck humanity for generations.
+                </blockquote>
+                <hr>
+                <br />
+                <h2>Pandemics</h2>
+                <h4>Plague of Justinian - 541-542 A.D.</h4>
+                <p>Origin: Unknown</p>
+                <h4>The Black Plague - 14th Century</h4>
+                <p>Origin: China</p>
+                <h4>The Third Plague - 19th/20th Century</h4>
+                <p>Origin: China</p>
+            </div>
+        </div>
+    </div>
+
+    <!--- Fixed background -->
+    <figure>
+        <div class="fixed-wrap">
+            <div id="fixed">
+            </div>
+        </div>
+    </figure>
+
+    <!-- Footer -->
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-12">
+                <a href="https://www.github.com/KoboldAdvocate">Built by Justin Adams</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
